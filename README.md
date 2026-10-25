@@ -59,6 +59,6 @@ The R scripts used for the statistical analyses presented in Figure 5 are provid
 
 ## Data availability
 
-Data availability arrangements are currently being finalized by the authors. The corresponding data access statement will be updated before publication.
+The raw sequencing data generated in this study are available from [repository name] under accession number [accession number]. The processed genus-level abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are available from the corresponding author upon reasonable request.
 
 <!-- TODO: Confirm whether the underlying data will be deposited in a public repository or made available from the corresponding author upon reasonable request. Update this section before publication. -->
