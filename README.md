@@ -8,10 +8,10 @@ The repository covers the genus-level association analyses for Figure 5 only. It
 
 ## Analyses
 
-- **Figure 5a:** Spearman rank correlations between genus-level compositional changes (ΔCLR = CLR at 72 h − CLR at 0 h) and *L. monocytogenes* growth, summarized by area under the growth curve (AUC). Correlations are calculated separately for each treatment and sampling time.
+- **Figure 5a:** Spearman rank correlations between genus-level compositional changes (ΔCLR = CLR at 72 h - CLR at 0 h) and *L. monocytogenes* growth, summarized by area under the growth curve (AUC). Correlations are calculated separately for each treatment and sampling time.
 - **Figure 5b:** Per-treatment linear mixed-effects models of standardized AUC against standardized ΔCLR, with sampling time as a fixed effect and animal identity as a random intercept.
 
-P-values are adjusted using the Benjamini–Hochberg false discovery rate (FDR) procedure within each treatment–sampling-time combination (Figure 5a) or treatment (Figure 5b). Heatmaps display genera with at least one nominal association (p < 0.05); significance symbols distinguish nominal p-values from FDR-adjusted results.
+P-values are adjusted using the Benjamini–Hochberg false discovery rate (FDR) procedure within each treatment-sampling-time combination (Figure 5a) or treatment (Figure 5b). Heatmaps display genera with at least one nominal association (p < 0.05); significance symbols distinguish nominal p-values from FDR-adjusted results.
 
 ## Repository structure
 
@@ -54,9 +54,9 @@ Rscript scripts/03_spearman_correlations.R
 Rscript scripts/04_mixed_effects_models.R
 ```
 
-`00_helpers.R` is sourced by the analysis scripts and does not need to be run separately. Generated tables and SVG figures are written to `results/figure_5a/` and `results/figure_5b/`.
+`00_helpers.R` is sourced by the analysis scripts and does not need to be run separately. Generated tables and SVG figures are written to path `results/figure_5a/` and `results/figure_5b/`.
 
-The required input files are provided in `data/`. Generated outputs are written to `results/`, `results/figure_5a/`, and `results/figure_5b/`.
+The required input files are provided in `path data/`. Generated outputs are written to path `results/`, `results/figure_5a/`, and `results/figure_5b/`.
 
 ## Statistical considerations
 
@@ -71,5 +71,3 @@ The R scripts used for the statistical analyses presented in Figure 5 are provid
 ## Data availability
 
 The raw sequencing data generated in this study are available from [repository name] under accession number [accession number]. The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
-
-<!-- TODO: Replace the repository name and accession number before publication. -->
