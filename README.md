@@ -70,4 +70,4 @@ The R scripts used for the statistical analyses presented in Figure 5 are provid
 
 ## Data availability
 
-The raw sequencing data generated in this study are available from [repository name] under accession number [accession number]. The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
+The raw sequencing data generated in this study are available from BioProject under accession number PRJEB128542. The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
