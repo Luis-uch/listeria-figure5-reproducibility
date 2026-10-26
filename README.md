@@ -22,11 +22,22 @@ scripts/
   02_growth_auc.R               Calculate growth AUC and summary tables
   03_spearman_correlations.R    Figure 5a correlations and heatmap
   04_mixed_effects_models.R     Figure 5b mixed-effects models and heatmap
-data/                            Input files (availability pending)
+data/                            Input files included with the repository
 results/                         Generated outputs (not required in the public repository)
 ```
 
-The workflow expects input microbiota abundance tables, a sample mapping file, and growth measurements in `data/`. File names and required columns are defined in the scripts. The analysis uses paired microbiota observations from the beginning (0 h) and end (72 h) of ex vivo incubation.
+## Input data
+
+The input files required to reproduce the Figure 5 analyses are included in `data/`:
+
+- `mapping_file.tsv`: tab-separated sample metadata. It links each microbiota `SampleID` to treatment, in vivo sampling time, ex vivo incubation time (`t0` or `t72`), and experimental animal (`Sheep`).
+- `growth.csv`: semicolon-separated *L. monocytogenes* growth measurements. It contains the sample identifier, treatment, sampling time, and logCFU values measured after 0, 24, 48, and 72 hours of ex vivo incubation.
+- `Microbial Metagenomics - t0_abundance.csv`: taxon-by-sample count table at the beginning of ex vivo incubation. Taxonomic annotations are stored in the first column and sample identifiers in the column headers.
+- `Microbial Metagenomics - t72_abundance.csv`: taxon-by-sample count table after 72 hours of ex vivo incubation.
+- `Microbial Metagenomics - t0_rel_abundance.csv`: relative-abundance counterpart of the `t0` count table. Values are expressed as fractions rather than percentages.
+- `Microbial Metagenomics - t72_rel_abundance.csv`: relative-abundance counterpart of the `t72` count table. Values are expressed as fractions rather than percentages.
+
+The workflow aggregates the taxonomic tables at genus level and pairs observations from the beginning (`t0`) and end (`t72`) of ex vivo incubation. The files contain experimental sample identifiers only.
 
 ## Software requirements
 
@@ -34,7 +45,7 @@ Analyses were developed using **R 4.5.2**. R package dependencies are loaded by 
 
 ## Running the analyses
 
-From the repository root, after placing the required input files in `data/`, run:
+From the repository root, run:
 
 ```bash
 Rscript scripts/01_prepare_data.R
@@ -45,7 +56,7 @@ Rscript scripts/04_mixed_effects_models.R
 
 `00_helpers.R` is sourced by the analysis scripts and does not need to be run separately. Generated tables and SVG figures are written to `results/figure_5a/` and `results/figure_5b/`.
 
-**Note:** The analysis scripts cannot be executed end-to-end without the corresponding input data.
+The required input files are provided in `data/`. Generated outputs are written to `results/`, `results/figure_5a/`, and `results/figure_5b/`.
 
 ## Statistical considerations
 
@@ -59,6 +70,6 @@ The R scripts used for the statistical analyses presented in Figure 5 are provid
 
 ## Data availability
 
-The raw sequencing data generated in this study are available from [repository name] under accession number [accession number]. The processed genus-level abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are available from the corresponding author upon reasonable request.
+The raw sequencing data generated in this study are available from [repository name] under accession number [accession number]. The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
 
-<!-- TODO: Confirm whether the underlying data will be deposited in a public repository or made available from the corresponding author upon reasonable request. Update this section before publication. -->
+<!-- TODO: Replace the repository name and accession number before publication. -->

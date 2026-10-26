@@ -1,6 +1,12 @@
-# Local input data
+# Local data (only the six documented analysis inputs are tracked)
 data/*
 !data/.gitkeep
+!data/mapping_file.tsv
+!data/growth.csv
+!data/Microbial Metagenomics - t0_abundance.csv
+!data/Microbial Metagenomics - t72_abundance.csv
+!data/Microbial Metagenomics - t0_rel_abundance.csv
+!data/Microbial Metagenomics - t72_rel_abundance.csv
 
 # Generated analyses and temporary results
 results/*
