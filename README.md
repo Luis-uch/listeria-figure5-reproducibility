@@ -56,7 +56,7 @@ Rscript scripts/04_mixed_effects_models.R
 
 `00_helpers.R` is sourced by the analysis scripts and does not need to be run separately. Generated tables and SVG figures are written to path `results/figure_5a/` and `results/figure_5b/`.
 
-The required input files are provided in `path data/`. Generated outputs are written to path `results/`, `results/figure_5a/`, and `results/figure_5b/`.
+The required input files are provided in path `data/`. Generated outputs are written to path `results/`, `results/figure_5a/`, and `results/figure_5b/`.
 
 ## Statistical considerations
 
