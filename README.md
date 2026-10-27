@@ -66,8 +66,8 @@ The analyses identify statistical associations, not causal effects of individual
 
 ## Code availability
 
-The R scripts used for the statistical analyses presented in Figure 5 are provided in this repository.
+The R scripts used for the statistical analyses presented in Figure 5 are provided in this repository. The archived version is available on Figshare at [https://doi.org/10.6084/m9.figshare.34806198](https://doi.org/10.6084/m9.figshare.34806198).
 
 ## Data availability
 
-The raw sequencing data generated in this study are available from the European Nucleotide Archive under BioProject accession PRJEB128542. The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
+The raw sequencing data generated in this study are available from the European Nucleotide Archive under BioProject accession [PRJEB128542](https://www.ebi.ac.uk/ena/browser/view/PRJEB128542). The processed abundance tables, sample metadata, and *Listeria monocytogenes* growth measurements required to reproduce the Figure 5 analyses are provided in the `data/` directory of this repository.
